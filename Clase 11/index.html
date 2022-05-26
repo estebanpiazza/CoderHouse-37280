@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="cuerpo">
+        <input type="button" value="Modo claro/oscuro" onclick="cambiarModo()">
+        <h1 id="titulo">Titulo de la web</h1>
+        <p id="parrafoPrincipal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestias iste inventore libero provident dicta assumenda nam amet in at aperiam sit, consequatur aliquid, blanditiis alias iure nemo tenetur quasi?</p>
+    </main>
+    <div id="bucles">
+        <label for="valores">Ingrese valor:</label>
+        <input type="text" name="valores" id="valor">
+        <input type="button" onclick="contarHasta()" value="Contar">
+        <p id="contados"></p>
+    </div>
+</body>
+<script src="main.js"></script>
+<form action="">
+    <label for="nombre">Nombre: </label>
+    <input type="text"name="nombre" id="nombre">
+    <label for="mail">Mail: </label>
+    <input type="text" name="mail" id="mail">
+    <label for="contrasenia">Contraseña: </label>
+    <input type="text" name="contrasenia" id="contrasenia">
+    <input type="button" value="Registrar" onclick="registrar()">
+</form>
+ <br>
+<label for="numeroBuscado">Ingrese ID del producto: </label>
+<input name="numeroBuscado"  type="text" id="numeroBuscado">
+<input type="button" value="Buscar" onclick="mostrarProductos(id)">
+<p id="resultado"></p>
+</html>
