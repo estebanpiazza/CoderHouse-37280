@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librerias</title>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js
+    ">    </script>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <!-- <script src="./main.js"></script> -->
+
+</head>
+<body>
+    <!-- <input type="button" onclick="dispararSwal()"> -->
+   <!--  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> -->
+</body>
+<script>
+    const dateTime = luxon.DateTime
+    const dt = dateTime.local(2022,06,02,11,29)
+    console.log(dt)
+    let ahora = dateTime.now()
+    console.log(ahora.year)
+    console.log(ahora.month)
+    console.log(ahora.day)
+    console.log(ahora.zoneName)
+    console.log(ahora.setLocale("en").toLocaleString(dateTime.DATE_FULL))
+    console.log(ahora.setLocale("es").toLocaleString(dateTime.DATE_FULL))
+    console.log(ahora.plus({years:20,hours:24}).toLocaleString())
+    const intervalo = luxon.Interval
+    const despues = dateTime.local(2023,01,27)
+    const diferencia = intervalo.fromDateTimes(ahora,despues)
+    console.log(diferencia.length('days'))
+
+</script>
+
+
+</html>
